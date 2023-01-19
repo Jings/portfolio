@@ -57,7 +57,7 @@ const Hero = () => {
                 className="hover:scale-110 duration-200 cursor-pointer hover:text-[#3F5894]"
               />
             </a>
-            <a href="mailto:website@ingo-krumbein.de?suject=Kontaktaufnahme">
+            <a href="mailto:website@ingo-krumbein.de?subject=Kontaktaufnahme">
               <IoMail
                 size={32}
                 className="hover:scale-110 duration-200 cursor-pointer hover:text-[#BE5442]"
