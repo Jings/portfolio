@@ -13,14 +13,14 @@ import { PageWrapper } from "./PageWrapper";
 
 const Hero = () => {
   return (
-    <PageWrapper name="home" classString="h-screen">
+    <PageWrapper name="home" classString="h-screen min-h-screen">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full w-11/12">
           <h2 className="text-4xl sm:text-7xl font-bold ">Ingo</h2>
           <h3 className="text-2xl uppercase text-zinc-500 pt-5">
             happy husband - proud dad - passionate dev
           </h3>
-          <p className=" py-4 max-w-md">
+          <p className="py-4 max-w-md">
             I have over 10 years of experience building software. Currently, I
             love to work on web application using technologies like React,
             Tailwind, Remix and Typescript.
