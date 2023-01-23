@@ -2,27 +2,24 @@ import {
   FaFacebookSquare,
   FaGithubSquare,
   FaLinkedin,
-  FaLinkedinIn,
   FaXingSquare,
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 import HeroImage from "../assets/hero.jpg";
-import { PageWrapper } from "./PageWrapper";
+import { AnimatedPage } from "../components/AnimatedPage";
 
 const Hero = () => {
   return (
-    <PageWrapper name="home" classString="h-screen min-h-screen">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full w-11/12">
-          <h2 className="text-4xl sm:text-7xl font-bold ">Ingo</h2>
+    <AnimatedPage>
+      <div className="flex justify-evenly gap-4 h-full flex-col md:flex-row">
+        <div className="flex flex-col justify-center">
+          <h2 className="text-4xl sm:text-7xl font-bold">Ingo</h2>
           <h3 className="text-2xl uppercase text-zinc-500 pt-5">
             happy husband - proud dad - passionate dev
           </h3>
           <p className="py-4 max-w-md">
-            I have over 10 years of experience building software. Currently, I
-            love to work on web application using technologies like React,
+            I have about 10 years of experience building software. Currently, I
+            love to work on web applications using technologies like React,
             Tailwind, Remix and Typescript.
           </p>
 
@@ -66,15 +63,15 @@ const Hero = () => {
           </div>
         </div>
 
-        <div>
+        <div className="hidden md:flex justify-center items-center">
           <img
             src={HeroImage}
-            alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            alt="me"
+            className="rounded-lg max-w-sm md:max-w-md lg:max-w-lg"
           />
         </div>
       </div>
-    </PageWrapper>
+    </AnimatedPage>
   );
 };
 

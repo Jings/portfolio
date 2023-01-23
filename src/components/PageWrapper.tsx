@@ -15,7 +15,7 @@ export const PageWrapper: FunctionComponent<PageWrapperProps> = ({
   return (
     <Element name={name}>
       <div
-        className={`${classString} w-full bg-gradient-to-t from-slate-700 to-slate-800 text-zinc-100`}
+        className={`min-h-screen w-full bg-gradient-to-t from-slate-700 to-slate-800 text-zinc-100`}
       >
         {children}
       </div>

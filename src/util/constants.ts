@@ -46,7 +46,7 @@ type Work = {
 export const links: NavLink[] = [
   {
     id: 1,
-    link: "home",
+    link: "",
     name: "Home",
   },
   {
@@ -163,7 +163,7 @@ export const works: Work[] = [
   },
   {
     id: 3,
-    name: "Ingo Krumbein",
+    name: "Portfolio",
     src: ingoKrumbein,
     sourceCode: "https://github.com/Jings/portfolio",
     link: "https://ingo-krumbein.de",
