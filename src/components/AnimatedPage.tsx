@@ -13,6 +13,8 @@ export const AnimatedPage: FunctionComponent<AnimatedPageProps> = ({
       className="flex h-full w-full flex-col p-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.25 }}
     >
       {children}
     </motion.div>
