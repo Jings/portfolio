@@ -9,7 +9,7 @@ const Contact = (): JSX.Element => {
             Contact
           </p>
           <p className="py-6">
-            Contact me by sending an email to{" "}
+            Feel free to contact me by sending an email to{" "}
             <a href="mailto:website@ingo-krumbein.de?subject=Kontaktaufnahme">
               website(at)ingo-krumbein(dot)de
             </a>
