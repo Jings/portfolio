@@ -6,12 +6,12 @@ const About = (): JSX.Element => {
   return (
     <AnimatedPage>
       <div className="pb-8">
-        <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-gray-500">
+        <p className="inline border-b-4 border-gray-500 text-2xl font-bold md:text-4xl">
           About
         </p>
       </div>
 
-      <p className="text-xl mt-10">
+      <p className="mt-10 text-xl">
         I started programming about 15 years ago. <br />
         Back in the days i learned Visual Basic 6 and VB.NET.
         <br />
@@ -28,7 +28,7 @@ const About = (): JSX.Element => {
 
       <br />
 
-      <p className="text-xl mt-10">
+      <p className="mt-10 text-xl">
         In Nov. 2021 i became a Dad. It completely changed my Life but i am more
         than proud and happy to be dad of the cutest girl in the world.{" "}
         <FaHeart color="red" className="inline" /> <br />
@@ -37,7 +37,7 @@ const About = (): JSX.Element => {
         <br />
       </p>
 
-      <p className="text-xl mt-10">
+      <p className="mt-10 pb-10 text-xl">
         When i find the time i enjoy taking photos, spent time with friends and
         do other typical stuff.
       </p>

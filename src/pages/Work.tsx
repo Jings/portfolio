@@ -5,17 +5,17 @@ const Work = () => {
   return (
     <AnimatedPage>
       <div>
-        <p className="text-2xl md:text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+        <p className="inline border-b-4 border-gray-500 p-2 text-2xl font-bold md:text-4xl">
           Work examples
         </p>
         <p className="py-6">Some work examples to checkout</p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-0">
+      <div className="grid gap-8 px-0 pb-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {works.map(({ id, src, sourceCode, link, name }) => (
           <div
             key={id}
-            className="max-w-sm p-5 border rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col"
+            className="flex max-w-sm flex-col rounded-lg border border-gray-700 bg-gray-800 p-5 shadow"
           >
             <h5 className="mb-5 text-lg tracking-tight">{name}</h5>
             <img
@@ -23,10 +23,10 @@ const Work = () => {
               alt=""
               className="rounded-sm duration-200 hover:scale-110"
             />
-            <div className="flex items-end justify-center h-full gap-3 mt-5">
+            <div className="mt-5 flex h-full items-end justify-center gap-3">
               {link && (
                 <a
-                  className="text-zinc-200 focus:outline-none focus:ring-4 font-medium rounded-sm text-sm px-5 py-2.5 bg-slate-700 hover:bg-slate-600 focus:ring-slate-600 border-slate-600"
+                  className="rounded-sm border-slate-600 bg-slate-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-slate-600"
                   href={link}
                   target="_blank"
                 >
@@ -36,7 +36,7 @@ const Work = () => {
 
               {sourceCode && (
                 <a
-                  className="text-zinc-200 focus:outline-none focus:ring-4 font-medium rounded-sm text-sm px-5 py-2.5 bg-slate-700 hover:bg-slate-600 focus:ring-slate-600 border-slate-600"
+                  className="rounded-sm border-slate-600 bg-slate-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-slate-600"
                   href={sourceCode}
                   target="_blank"
                 >
