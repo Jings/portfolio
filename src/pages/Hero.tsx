@@ -1,9 +1,4 @@
-import {
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaLinkedin,
-  FaXingSquare,
-} from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaXingSquare } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import HeroImage from "../assets/hero.jpg";
 import { AnimatedPage } from "../components/AnimatedPage";
@@ -46,12 +41,6 @@ const Hero = () => {
               <FaGithubSquare
                 size={32}
                 className="cursor-pointer duration-200 hover:scale-110 hover:text-black"
-              />
-            </a>
-            <a href="https://facebook.com/ingo.krumbein" target="_blank">
-              <FaFacebookSquare
-                size={32}
-                className="cursor-pointer duration-200 hover:scale-110 hover:text-[#3F5894]"
               />
             </a>
             <a href="mailto:website@ingo-krumbein.de?subject=Kontaktaufnahme">
