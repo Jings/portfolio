@@ -1,7 +1,7 @@
-import { AnimatedPage } from "../components/AnimatedPage";
+import AnimatedPage from "../components/AnimatedPage";
 import { technologies } from "../util/constants";
 
-const Experience = () => {
+export default function Experience() {
   return (
     <AnimatedPage>
       <div>
@@ -24,6 +24,4 @@ const Experience = () => {
       </div>
     </AnimatedPage>
   );
-};
-
-export default Experience;
+}

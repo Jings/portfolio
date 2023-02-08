@@ -1,8 +1,8 @@
 import { DiCss3, DiHtml5, DiMysql, DiPhp } from "react-icons/di";
 import { FaHeart } from "react-icons/fa";
-import { AnimatedPage } from "../components/AnimatedPage";
+import AnimatedPage from "../components/AnimatedPage";
 
-const About = (): JSX.Element => {
+export default function About() {
   return (
     <AnimatedPage>
       <div className="pb-8">
@@ -43,6 +43,4 @@ const About = (): JSX.Element => {
       </p>
     </AnimatedPage>
   );
-};
-
-export default About;
+}

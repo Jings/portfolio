@@ -1,7 +1,7 @@
-import { AnimatedPage } from "../components/AnimatedPage";
+import AnimatedPage from "../components/AnimatedPage";
 import { works } from "../util/constants";
 
-const Work = () => {
+export default function Work() {
   return (
     <AnimatedPage>
       <div>
@@ -29,6 +29,7 @@ const Work = () => {
                   className="rounded-sm border-slate-600 bg-slate-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-slate-600"
                   href={link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Demo
                 </a>
@@ -39,6 +40,7 @@ const Work = () => {
                   className="rounded-sm border-slate-600 bg-slate-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-slate-600"
                   href={sourceCode}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Code
                 </a>
@@ -49,6 +51,4 @@ const Work = () => {
       </div>
     </AnimatedPage>
   );
-};
-
-export default Work;
+}

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { links } from "../util/constants";
 import { NavLink } from "react-router-dom";
+import { links } from "../util/constants";
 
-const NavBar = (): JSX.Element => {
+export default function NavBar() {
   const [mobileNavigationShown, setMobileNavigationShown] =
     useState<boolean>(false);
 
@@ -29,12 +29,13 @@ const NavBar = (): JSX.Element => {
         ))}
       </ul>
       <div className="z-30 flex items-center gap-5 md:hidden">
-        <div
+        <button
+          type="button"
           onClick={() => setMobileNavigationShown(!mobileNavigationShown)}
           className="z-10 cursor-pointer pr-4 text-zinc-500"
         >
           {mobileNavigationShown ? <FaTimes size={28} /> : <FaBars size={28} />}
-        </div>
+        </button>
       </div>
 
       {mobileNavigationShown && (
@@ -59,6 +60,4 @@ const NavBar = (): JSX.Element => {
       )}
     </div>
   );
-};
-
-export default NavBar;
+}

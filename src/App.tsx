@@ -1,12 +1,12 @@
+import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
+import Layout from "./components/Layout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Exprerience";
 import Hero from "./pages/Hero";
-import Layout from "./components/Layout";
-import Work from "./pages/Work";
 import NotFound from "./pages/NotFound";
-import { AnimatePresence } from "framer-motion";
+import Work from "./pages/Work";
 
 function App() {
   const location = useLocation();

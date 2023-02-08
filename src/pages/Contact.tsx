@@ -1,7 +1,12 @@
-import { FaGithubSquare, FaLinkedin, FaXingSquare } from "react-icons/fa";
-import { AnimatedPage } from "../components/AnimatedPage";
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaPatreon,
+  FaXingSquare,
+} from "react-icons/fa";
+import AnimatedPage from "../components/AnimatedPage";
 
-const Contact = (): JSX.Element => {
+export default function Contact() {
   return (
     <AnimatedPage>
       <div className="p-4">
@@ -19,6 +24,7 @@ const Contact = (): JSX.Element => {
             <a
               href="https://www.linkedin.com/in/ingo-k-129a32196/"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin
                 size={32}
@@ -28,14 +34,25 @@ const Contact = (): JSX.Element => {
             <a
               href="https://www.xing.com/profile/Ingo_Krumbein"
               target="_blank"
+              rel="noreferrer"
             >
               <FaXingSquare
                 size={32}
                 className="cursor-pointer duration-200 hover:scale-110 hover:text-[#BFDD63]"
               />
             </a>
-            <a href="https://github.com/Jings" target="_blank">
+            <a href="https://github.com/Jings" target="_blank" rel="noreferrer">
               <FaGithubSquare
+                size={32}
+                className="cursor-pointer duration-200 hover:scale-110 hover:text-black"
+              />
+            </a>
+            <a
+              href="https://patreon.com/IngoKrumbein"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaPatreon
                 size={32}
                 className="cursor-pointer duration-200 hover:scale-110 hover:text-black"
               />
@@ -45,6 +62,4 @@ const Contact = (): JSX.Element => {
       </div>
     </AnimatedPage>
   );
-};
-
-export default Contact;
+}

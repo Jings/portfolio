@@ -1,9 +1,14 @@
-import { FaGithubSquare, FaLinkedin, FaXingSquare } from "react-icons/fa";
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaPatreon,
+  FaXingSquare,
+} from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import HeroImage from "../assets/hero.jpg";
 import { AnimatedPage } from "../components/AnimatedPage";
 
-const Hero = () => {
+export default function Hero() {
   return (
     <AnimatedPage>
       <div className="flex flex-auto flex-col justify-evenly gap-4 pb-10 md:flex-row">
@@ -22,6 +27,7 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/ingo-k-129a32196/"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin
                 size={32}
@@ -31,16 +37,27 @@ const Hero = () => {
             <a
               href="https://www.xing.com/profile/Ingo_Krumbein"
               target="_blank"
+              rel="noreferrer"
             >
               <FaXingSquare
                 size={32}
                 className="cursor-pointer duration-200 hover:scale-110 hover:text-[#BFDD63]"
               />
             </a>
-            <a href="https://github.com/Jings" target="_blank">
+            <a href="https://github.com/Jings" target="_blank" rel="noreferrer">
               <FaGithubSquare
                 size={32}
                 className="cursor-pointer duration-200 hover:scale-110 hover:text-black"
+              />
+            </a>
+            <a
+              href="https://patreon.com/IngoKrumbein"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaPatreon
+                size={32}
+                className="cursor-pointer duration-200 hover:scale-110 hover:text-[#ff424d]"
               />
             </a>
             <a href="mailto:website@ingo-krumbein.de?subject=Kontaktaufnahme">
@@ -55,13 +72,11 @@ const Hero = () => {
         <div className="flex items-center justify-center">
           <img
             src={HeroImage}
-            alt="me"
+            alt="Ingo Krumbein"
             className="max-w-xs rounded-lg md:max-w-md lg:max-w-lg"
           />
         </div>
       </div>
     </AnimatedPage>
   );
-};
-
-export default Hero;
+}
