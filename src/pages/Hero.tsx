@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import HeroImage from "../assets/hero.jpg";
-import { AnimatedPage } from "../components/AnimatedPage";
+import AnimatedPage from "../components/AnimatedPage";
 
 export default function Hero() {
   return (
